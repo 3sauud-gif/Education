@@ -540,3 +540,71 @@ body {
     0% { opacity: 1; transform: translate(-50%, -50%) scale(0.3); }
     100% { opacity: 0; transform: translate(-50%, -50%) scale(1.8); }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user-index-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.user-index-container h1::after {
+    content: "";
+    width: 180px;
+    height: 4px;
+    background: linear-gradient(90deg, #555, #0934ce56);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user-index-container p {
+    font-size: 18px;
+    color: #555;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.user-index-container p::before,
+.user-index-container p::after {
+    content: "•";
+    color: #0934ce56;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+
+.user-index-container p::before {
+    right: 0;
+}
+
+.user-index-container p::after {
+    left: 0;
+}
