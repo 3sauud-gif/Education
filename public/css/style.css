@@ -1,0 +1,278 @@
+/* ===========================
+   الألوان الأساسية
+=========================== */
+:root {
+    --primary: #4A90E2;
+    --secondary: #50E3C2;
+    --background: #F7F9FC;
+    --text: #333;
+    --success: #27AE60;
+    --danger: #E74C3C;
+}
+
+/* ===========================
+   تنسيق عام
+=========================== */
+body {
+    background: var(--background);
+    font-family: "Tajawal", sans-serif;
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ===========================
+   الفيديو
+=========================== */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===========================
+   الصورة المصغرة
+=========================== */
+.thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%; /* دائرة كاملة */
+    margin-left: 10px;
+}
+
+/* ===========================
+   الفورم
+=========================== */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+.btn-danger {
+    background: var(--danger);
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+/* ===========================
+   الكويزات
+=========================== */
+.quiz-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-left: 5px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* زر الرجوع */
+.back-btn, .back-home, .back-btn-top{
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--secondary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.back-home, .back-btn-top{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.back-btn:hover,
+.back-home:hover,
+.back-btn-top:hover{
+    background: #3ac7a8;
+}
+
+/* ===========================
+   صفحة الإنشاء
+=========================== */
+.create-container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.create-container button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ===========================
+   أزرار الداشبورد
+=========================== */
+.center-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.big-btn {
+    background: #1e2a38;
+    color: white;
+    padding: 22px 50px;
+    font-size: 24px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 260px;
+    text-align: center;
+}
+
+.big-btn:hover {
+    background: #16202b;
+    transform: scale(1.05);
+}
+
+/* زر إضافة كورس */
+.add-btn {
+    display: inline-block;
+    background: #1e2a38;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #16202b;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   قائمة الكورسات + الجدول
+=========================== */
+.hidden {
+    display: none;
+}
+
+.course-item {
+    background: #2c3e50;
+    color: white;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.course-item:hover {
+    background: #1f2d3a;
+}
+
+.course-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background: #f8f8f8;
+}
+
+.course-table th,
+.course-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.single-row td {
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* أزرار صغيرة */
+.btn-small {
+    background: #3498db;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-danger-small {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
